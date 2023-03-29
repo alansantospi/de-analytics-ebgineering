@@ -1,0 +1,108 @@
+
+
+============================== 2023-03-28 17:55:12.343849 | 0dd2d44e-df58-4f5c-823e-454ce29ab40d ==============================
+[0m17:55:12.343849 [info ] [MainThread]: Running with dbt=1.4.5
+[0m17:55:12.345487 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\alans\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m17:55:12.345487 [debug] [MainThread]: Tracking: tracking
+[0m17:55:12.346487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD91A21040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD974D26A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD974D2970>]}
+[0m17:55:12.346487 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\alans\.dbt
+[0m17:55:12.349615 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-28 18:47:23.538323 | dc7f7c7b-295a-4b42-a3ca-641b4b9395dd ==============================
+[0m18:47:23.538323 [info ] [MainThread]: Running with dbt=1.4.5
+[0m18:47:23.540323 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\alans\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m18:47:23.541324 [debug] [MainThread]: Tracking: tracking
+[0m18:47:23.542324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EA7D03A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EAD7CC880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EAD7CCA00>]}
+[0m18:47:23.544324 [debug] [MainThread]: Starter project path: C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\include\starter_project
+[0m20:33:11.460472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EBFE5DD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EBFE5D2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EBFE5DDF0>]}
+[0m20:33:11.476472 [debug] [MainThread]: Flushing usage events
+[0m20:33:12.259331 [error] [MainThread]: Encountered an error:
+
+[0m20:33:12.420827 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\click\termui.py", line 129, in prompt_func
+    return f("")
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\main.py", line 253, in run_from_args
+    results = task.run()
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\click\termui.py", line 147, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\click\termui.py", line 136, in prompt_func
+    raise Abort()
+click.exceptions.Abort
+
+
+
+============================== 2023-03-28 20:48:13.055904 | 075df38f-70b2-4ba5-bdc4-2682dd203042 ==============================
+[0m20:48:13.055904 [info ] [MainThread]: Running with dbt=1.4.5
+[0m20:48:13.057902 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\alans\\Google Drive\\LetsCode\\Turmas\\943\\de-analytics-ebgineering\\aula07', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m20:48:13.057902 [debug] [MainThread]: Tracking: tracking
+[0m20:48:13.058903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018854703A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001885A18D880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001885A18DA00>]}
+[0m20:48:14.959232 [debug] [MainThread]: Executing "git --help"
+[0m20:48:15.000708 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:48:15.000708 [debug] [MainThread]: STDERR: "b''"
+[0m20:48:15.011744 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m20:48:15.011744 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:48:15.023703 [debug] [MainThread]: On debug: select 1 as id
+[0m20:48:19.011428 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-shop&j=bq:US:6ead41a8-541f-4ba0-80ff-d3b6ec332799&page=queryresults
+[0m20:48:19.016959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018858764AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001886C811F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001886C811FD0>]}
+[0m20:48:19.016959 [debug] [MainThread]: Flushing usage events
+[0m20:48:20.333948 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-03-28 22:54:50.814259 | a43955c5-109b-4fe2-9e85-62cdc03df6c1 ==============================
+[0m22:54:50.814259 [info ] [MainThread]: Running with dbt=1.4.5
+[0m22:54:50.817973 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\alans\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'shop2', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m22:54:50.817973 [debug] [MainThread]: Tracking: tracking
+[0m22:54:50.818970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202A3F1C730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002029E453880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202A3F1CAF0>]}
+[0m22:54:50.821053 [debug] [MainThread]: Starter project path: C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\include\starter_project
+[0m22:55:39.275646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B65BDD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B65BD2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B65BDDC0>]}
+[0m22:55:39.276644 [debug] [MainThread]: Flushing usage events
+[0m22:55:41.002561 [error] [MainThread]: Encountered an error:
+
+[0m22:55:41.009973 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\click\termui.py", line 129, in prompt_func
+    return f("")
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\main.py", line 253, in run_from_args
+    results = task.run()
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 117, in generate_target_from_input
+    target = self.generate_target_from_input(
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\click\termui.py", line 147, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\alans\AppData\Local\Programs\Python\Python39\lib\site-packages\click\termui.py", line 136, in prompt_func
+    raise Abort()
+click.exceptions.Abort
+

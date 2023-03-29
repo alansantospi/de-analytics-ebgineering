@@ -1,0 +1,13 @@
+shop: # isso precisa corresponder ao perfil em seu arquivo dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: C:/Users/alans/Google Drive/LetsCode/Turmas/943/de-analytics-ebgineering/aula07/dbt-shop-23c02e4a1c48.json
+      project: dbt-shop
+      dataset: dbt_alan2
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
